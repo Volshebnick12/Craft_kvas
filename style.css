@@ -1,0 +1,27 @@
+.kvas {
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+
+.main-nav {
+    margin-bottom: 0;
+}
+
+.consist-kvas {
+    display: block;
+    margin-top: 15px;
+}
+
+.alk-kall {
+    display: block;
+    margin:  0 0 0 5px;
+}
+
+.main {
+    margin-bottom: 5px;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
