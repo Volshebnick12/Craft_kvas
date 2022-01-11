@@ -43,7 +43,7 @@
           <table class="character">
             <tr>
               <td>Алк.</td>
-              <td>&lt; 1%</td>
+              <td>&lt; 0,5%</td>
             </tr>
             <tr>
               <td>Ккал</td>
@@ -101,7 +101,7 @@
     <div>
       <h2>Пресса о нас</h2>
       <blockquote>
-        <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка</p>
+        <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!</p>
         <cite>Газета столичный Стольник</cite>
         <a href="#">Читать далее</a>
       </blockquote>
@@ -135,7 +135,7 @@
             <td>Вахтёр <sup>Новинка</sup></td>
             <td>&lt; 1%</td>
             <td>35</td>
-            <td>0,6 л</td>
+            <td>0,5 л</td>
             <td>150 Р.</td>
           </tr>
           <tr>
@@ -151,23 +151,63 @@
     <div>
       <h2>Заказать</h2>
       <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
-      <form action="order-form"></form>
-        <div class ="order-form-group"></div>
+      <form action="order-form">
+        <div class ="order-form-group">
           <label for="fullname">Представьтесь:</label>
           <input type="text" name="fullname" id="fullname">
         </div>
-        <div class ="order-form-group"></div>
+        <div class ="order-form-group">
           <label for="phone">Номер телефона:</label>
           <input type="text" name="phone" id="phone">
         </div>
-        <div class ="order-form-group"></div>
+        <div class ="order-form-group">
           <label for="phone_1">Доп. номер:</label>
           <input type="text" name="phone_1" id="phone_1">
         </div>
-        <div class ="order-form-group"></div>
+        <div class ="order-form-group">
           <label for="email">Email:</label>
           <input type="email" name="e-mail" id="e-mail">
         </div>
+        <div class ="order-form-group">
+          <label for="order_quantity">Объём заказа:</label>
+          <br>
+          <select name="litr" id="litr">
+            <option value="l1" selected>От 5 до 10 баррелей в неделю</option>
+          </select>
+        </div>
+        <div class ="order-form-group">
+          <label for="order_quantity">Доп. комментарий:</label>
+          <textarea name="text" id="t1" cols="20" rows="2"></textarea>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="subscription" checked>
+            Я согласен получать квасную рассылку
+          </label>
+          <br>
+          <button>Отправить заказ</button>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <img src="img/logo.png" alt="Кваст">
+      <ul class="main-nav">
+        <li><a href="#">История</a></li>
+        <li><a href="#">Производство</a></li>
+        <li><a href="#">Ассортимент</a></li>
+        <li><a href="#">Где купить</a></li>
+      </ul>
+      <div class="messages">
+          <a class="btn" href="#">Инстаграм</a>
+          <a class="btn" href="#">Фейсбук</a>
+          <a class="btn" href="#">Вконтакте</a>
+      </div>
+      <p>При перепечатке материалов ссылка на сайт обязательна!</p>
+      <div>
+        <a href="#"><img src="img/htmlacademy.png" alt="htmlacademy" width="27" height="34"></a><b>Разработчик:</b>
+        <a class="btn" href="#">HTML Academy</a>
+      </div>
     </div>
 
   </body>
